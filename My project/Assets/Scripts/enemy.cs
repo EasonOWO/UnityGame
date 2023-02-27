@@ -21,7 +21,7 @@ public class enemy : MonoBehaviour
         if (col.gameObject.tag == "bullet")
         {
             Destroy(col.gameObject);
-            HP -= 25;
+            HP -= 999;
             Instantiate(img);
         }
         
