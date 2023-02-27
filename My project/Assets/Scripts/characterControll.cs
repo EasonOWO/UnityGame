@@ -20,10 +20,13 @@ public class characterControll : MonoBehaviour
 
     //[HideInInspector]
     public TextMeshProUGUI HPtext;
-    public int HP=100;
+    public TextMeshProUGUI ATKtext;
+    public TextMeshProUGUI TimeText;
 
     public GameObject takeDamageImage;
     public float takeDamageTime = 0.7f;
+
+    public float totalTime=0f;
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -32,7 +35,7 @@ public class characterControll : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        HPtext.text = "Player HP: " + HP;
+        HPtext.text = "Player HP: " + characterDamage.HP;
     }
 
     void Update()
@@ -67,8 +70,14 @@ public class characterControll : MonoBehaviour
         playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
         transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
 
+        //TIME
         takeDamageTime -= Time.deltaTime;
-        
+        totalTime += Time.deltaTime;
+
+        //UI
+        HPtext.text = "Player HP: " + characterDamage.HP;
+        ATKtext.text = "Player ATK: " + characterDamage.DMG;
+        TimeText.text = "time: " + Math.Floor(totalTime);
     }
     void OnCollisionEnter(Collision col)
     {
@@ -76,8 +85,7 @@ public class characterControll : MonoBehaviour
         {
             takeDamageTime = 0.7f;
             Destroy(col.gameObject);
-            HP -= 10;
-            HPtext.text = "Player HP:" + HP;
+            characterDamage.HP -= 10;
             takeDamageImage.SetActive(true);
         }
     }

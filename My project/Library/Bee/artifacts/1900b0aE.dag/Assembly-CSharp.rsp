@@ -392,11 +392,14 @@
 "Assets/Scripts/bulletShoot.cs"
 "Assets/Scripts/bulletSpeed.cs"
 "Assets/Scripts/characterControll.cs"
+"Assets/Scripts/characterDamage.cs"
 "Assets/Scripts/damageImg.cs"
 "Assets/Scripts/enemy.cs"
 "Assets/Scripts/enemyChasingAi.cs"
 "Assets/Scripts/enemySpawner.cs"
+"Assets/Scripts/itemBeObtain.cs"
 "Assets/Scripts/onHit.cs"
+"Assets/Scripts/rotateItem.cs"
 -langversion:9.0
 
 /deterministic

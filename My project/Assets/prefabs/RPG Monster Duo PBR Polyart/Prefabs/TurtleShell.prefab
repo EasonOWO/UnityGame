@@ -973,6 +973,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 100
   img: {fileID: 527419714490948487, guid: f7d3b25b83d2cc847ae3ce3fe07fa931, type: 3}
+  healItem: {fileID: 3065383186812972640, guid: da0e8a31f9220f648b4d55b1ed1b75ca, type: 3}
+  dmgItem: {fileID: 852721201337644133, guid: fcc51674695e74c40bb9bf3e91b0470c, type: 3}
 --- !u!114 &690068439
 MonoBehaviour:
   m_ObjectHideFlags: 0
