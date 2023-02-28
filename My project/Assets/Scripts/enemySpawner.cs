@@ -13,6 +13,7 @@ public class enemySpawner : MonoBehaviour
     public GameObject yellowSpider;
     public GameObject onihito;
     public GameObject blackSpider;
+    public GameObject dragon;
     private GameObject targetSpawnMonster;
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,10 @@ public class enemySpawner : MonoBehaviour
         if (time > 240 && time < 300)
         {
             targetSpawnMonster = blackSpider;
+        }
+        if (time > 300)
+        {
+            targetSpawnMonster = null;
         }
     }
     void spawn()

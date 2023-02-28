@@ -8,6 +8,7 @@ TagManager:
   - bullet
   - plusdmgItem
   - healItem
+  - boss
   layers:
   - Default
   - TransparentFX

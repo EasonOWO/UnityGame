@@ -28,6 +28,10 @@ public class enemy : MonoBehaviour
             }
             Destroy(gameObject);
         }
+        if (characterControll.totalTime > 300)
+        {
+            dragonController.HP += 100;
+        }
     }
 
     void OnTriggerEnter(Collider col)

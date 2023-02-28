@@ -26,7 +26,7 @@ public class characterControll : MonoBehaviour
     public GameObject takeDamageImage;
     public float takeDamageTime = 0.7f;
 
-    public float totalTime=0f;
+    public static float totalTime=0f;
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -79,13 +79,20 @@ public class characterControll : MonoBehaviour
         ATKtext.text = "Player ATK: " + characterDamage.DMG;
         TimeText.text = "time: " + Math.Floor(totalTime);
     }
-    void OnCollisionEnter(Collision col)
+    void OnCollisionStay(Collision col)
     {
+        print(col);
         if (col.gameObject.tag == "enemy" && takeDamageTime<0)
         {
-            takeDamageTime = 0.7f;
+            takeDamageTime = 0.8f;
             Destroy(col.gameObject);
             characterDamage.HP -= 10;
+            takeDamageImage.SetActive(true);
+        }
+        if (col.gameObject.tag == "boss" && takeDamageTime < 0)
+        {
+            takeDamageTime = 0.8f;
+            characterDamage.HP -= 25;
             takeDamageImage.SetActive(true);
         }
     }
