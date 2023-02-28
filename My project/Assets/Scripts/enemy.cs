@@ -28,9 +28,10 @@ public class enemy : MonoBehaviour
             }
             Destroy(gameObject);
         }
-        if (characterControll.totalTime > 300)
+        if (characterControll.totalTime > 305)
         {
             dragonController.HP += 100;
+            Destroy(gameObject);
         }
     }
 

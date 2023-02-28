@@ -29364,6 +29364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sand Spider
       objectReference: {fileID: 0}
+    - target: {fileID: 1705849404070370923, guid: 3af956640595c6e4cb9436f0f4545ffd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2082831617555776721, guid: 3af956640595c6e4cb9436f0f4545ffd, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -31269,7 +31273,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1157.5, y: 437.5}
+  m_SizeDelta: {x: 1920, y: 1280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1192219512
 MonoBehaviour:
@@ -32698,7 +32702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1243325192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32775,7 +32779,7 @@ MonoBehaviour:
   yellowSpider: {fileID: 1705849404070370923, guid: 3af956640595c6e4cb9436f0f4545ffd, type: 3}
   onihito: {fileID: 1975194375736644, guid: 128a80094e00bf34fa2555766a7eea0e, type: 3}
   blackSpider: {fileID: 8688803186435683820, guid: fd02805ee801de64a828e8190cac7784, type: 3}
-  dragon: {fileID: 0}
+  dragon: {fileID: 139696, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
 --- !u!114 &1243325196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53725,6 +53729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red
       objectReference: {fileID: 0}
+    - target: {fileID: 139696, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 485588, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -53735,11 +53743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 485588, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.07
+      value: -11.4
       objectReference: {fileID: 0}
     - target: {fileID: 485588, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.71
+      value: 25.02
       objectReference: {fileID: 0}
     - target: {fileID: 485588, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -58072,6 +58080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dmgplus
       objectReference: {fileID: 0}
+    - target: {fileID: 852721201337644133, guid: fcc51674695e74c40bb9bf3e91b0470c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcc51674695e74c40bb9bf3e91b0470c, type: 3}
 --- !u!1001 &2694717193066518086
@@ -58084,6 +58096,10 @@ PrefabInstance:
     - target: {fileID: 3065383186812972640, guid: da0e8a31f9220f648b4d55b1ed1b75ca, type: 3}
       propertyPath: m_Name
       value: heal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065383186812972640, guid: da0e8a31f9220f648b4d55b1ed1b75ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5592279475810265414, guid: da0e8a31f9220f648b4d55b1ed1b75ca, type: 3}
       propertyPath: m_RootOrder

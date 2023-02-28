@@ -29,6 +29,8 @@ public class characterControll : MonoBehaviour
     public static float totalTime=0f;
     void Start()
     {
+        //talTime = 290;
+
         characterController = GetComponent<CharacterController>();
 
         // mouse lock

@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class dragonController : MonoBehaviour
 {
-    static public int HP = 6000;
+    public static int HP = 6000;
     public GameObject img;
     Animator ani;
     public NavMeshAgent agent;

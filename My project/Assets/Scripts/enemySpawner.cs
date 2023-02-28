@@ -15,17 +15,19 @@ public class enemySpawner : MonoBehaviour
     public GameObject blackSpider;
     public GameObject dragon;
     private GameObject targetSpawnMonster;
+    bool isSummonedDragon=false;
     // Start is called before the first frame update
     void Start()
     {
         targetSpawnMonster = slime;
+        //me=290;
     }
 
     // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
-        if (monsterSpawnedNumber*2 <= time && time<300)
+        if (monsterSpawnedNumber*2 <= time)
         {
             spawn();
             monsterSpawnedNumber += 1;
@@ -60,5 +62,11 @@ public class enemySpawner : MonoBehaviour
 
         if (time < 300)
             Instantiate(targetSpawnMonster, spawnpoint[whereToSpawn].transform.position, new Quaternion(0,0,0,0));
+        else if(time > 300)
+        {
+            Instantiate(dragon, new Vector3(0,0,0), new Quaternion(0, 0, 0, 0));
+            Destroy(gameObject);
+        }
+        
     }
 }

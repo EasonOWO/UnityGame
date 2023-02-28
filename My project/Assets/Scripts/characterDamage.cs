@@ -10,7 +10,7 @@ public class characterDamage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       //MG = 200;
     }
 
     // Update is called once per frame
