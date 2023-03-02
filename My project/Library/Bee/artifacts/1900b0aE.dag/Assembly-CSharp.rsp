@@ -401,6 +401,7 @@
 "Assets/Scripts/itemBeObtain.cs"
 "Assets/Scripts/onHit.cs"
 "Assets/Scripts/rotateItem.cs"
+"Assets/Scripts/UIControll.cs"
 -langversion:9.0
 
 /deterministic

@@ -20,7 +20,7 @@ public class enemySpawner : MonoBehaviour
     void Start()
     {
         targetSpawnMonster = slime;
-        //me=290;
+        //time=290;
     }
 
     // Update is called once per frame

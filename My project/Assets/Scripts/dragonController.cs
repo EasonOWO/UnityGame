@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class dragonController : MonoBehaviour
 {
@@ -55,7 +56,10 @@ public class dragonController : MonoBehaviour
             }
         }
         ////////////////////////////////////////////////////
-        
+        if (HP <= 0)
+        {
+            StartCoroutine(winner());
+        }
         ////////////////////////////////////////////////////
 
         ////////////////////////////////////////////////////
@@ -104,6 +108,12 @@ public class dragonController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         speed /= 5;
         ani.SetBool("isRunning", false);
+    }
+    IEnumerator winner()
+    {
+        UIControll.isWin = true;
+        yield return new WaitForSeconds(7f);
+        SceneManager.LoadScene("UI");
     }
 }
 

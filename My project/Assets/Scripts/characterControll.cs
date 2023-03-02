@@ -25,11 +25,11 @@ public class characterControll : MonoBehaviour
 
     public GameObject takeDamageImage;
     public float takeDamageTime = 0.7f;
-
+    
     public static float totalTime=0f;
     void Start()
     {
-        //talTime = 290;
+        //totalTime = 290;
 
         characterController = GetComponent<CharacterController>();
 
@@ -56,7 +56,7 @@ public class characterControll : MonoBehaviour
         
         else
             moveDirection.y = movementDirectionY;
-
+        
         // gravity
         if (!characterController.isGrounded)
         {

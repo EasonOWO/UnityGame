@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class characterDamage : MonoBehaviour
 {
@@ -10,8 +11,15 @@ public class characterDamage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       //MG = 200;
+      //DMG = 200;
     }
-
+    void Update()
+    {
+        if(HP<=0 || player.transform.position.y < -30)
+        {
+            UIControll.isDead = true;
+            SceneManager.LoadScene("UI");
+        }
+    }
     // Update is called once per frame
 }
